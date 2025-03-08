@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المدونة - مدرسة دالات للبنات</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">مدرسة دالات الاهلية للبنات</div>
+                <ul>
+                    <li><a href="index.html#home">الرئيسية</a></li>
+                    <li><a href="index.html#about">عن المدرسة</a></li>
+                    <li><a href="index.html#programs">البرامج</a></li>
+                    <li><a href="blogs.html">المدونة</a></li>
+                    <li><a href="index.html#contact">اتصل بنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Blogs Section -->
+    <section class="blogs-container">
+        <div class="container">
+            <h1 class="section-title">المدونة</h1>
+            
+            <div class="blog-filters">
+                <input type="text" class="search-box" placeholder="البحث في المقالات..." id="blog-search">
+                <div class="filter-category">
+                    <select id="category-filter">
+                        <option value="all">جميع التصنيفات</option>
+                        <!-- Categories will be dynamically loaded -->
+                    </select>
+                </div>
+            </div>
+            
+            <div class="blogs-grid" id="blogs-grid">
+                <!-- Blog entries will be dynamically loaded here from the database -->
+                <!-- Template for blog post -->
+                <template id="blog-template">
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <img src="" alt="صورة المقال" class="blog-img">
+                        </div>
+                        <div class="blog-details">
+                            <span class="blog-date"></span>
+                            <h3 class="blog-title"></h3>
+                            <p class="blog-excerpt"></p>
+                            <a href="" class="blog-link">اقرأ المزيد</a>
+                        </div>
+                    </div>
+                </template>
+            </div>
+            
+            <!-- Pagination -->
+            <div class="pagination" id="pagination">
+                <!-- Pagination will be generated dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>مدرسة دالات للبنات</h3>
+                    <p>تنمية العقول، بناء المستقبل</p>
+                </div>
+                <div class="footer-links">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index.html#home">الرئيسية</a></li>
+                        <li><a href="index.html#about">عن المدرسة</a></li>
+                        <li><a href="index.html#programs">البرامج</a></li>
+                        <li><a href="index.html#faculty">الهيئة التعليمية</a></li>
+                        <li><a href="blogs.html">المدونة</a></li>
+                        <li><a href="index.html#contact">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>تواصل معنا</h4>
+                    <div class="social-icons">
+                        <a href="#">X (تويتر)</a>
+                        <a href="#">سناب شات</a>
+                        <a href="#">انستغرام</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 مدرسة دالات للبنات. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for blog functionality -->
+    <script src="blogs.js"></script>
+</body>
+</html>
